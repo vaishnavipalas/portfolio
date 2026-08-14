@@ -92,6 +92,9 @@ img {
   width: calc(100% - var(--sidebar-width));
   padding: 3rem 4rem 6rem 3rem;
   max-width: calc(var(--content-max) + 4rem + 3rem);
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 6rem);
 }
 
 /* ============ Profile ============ */
@@ -386,7 +389,8 @@ img {
 
 /* ============ Footer ============ */
 .footer {
-  margin-top: 4rem;
+  margin-top: auto;
+  padding-top: 2rem;
   font-family: var(--font-mono);
   font-size: 0.8rem;
   color: var(--text-muted);
