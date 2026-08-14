@@ -392,6 +392,40 @@ img {
   color: var(--text-muted);
 }
 
+/* ============ Cursor glow ============ */
+.cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  margin-left: -140px;
+  margin-top: -140px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 5;
+  background: radial-gradient(
+    circle,
+    rgba(176, 190, 197, 0.55) 0%,
+    rgba(120, 144, 156, 0.25) 35%,
+    rgba(120, 144, 156, 0) 70%
+  );
+  filter: blur(18px);
+  opacity: 0;
+  transition: opacity 300ms ease;
+  will-change: transform, opacity;
+}
+
+.cursor-glow.active {
+  opacity: 1;
+}
+
+@media (hover: none), (pointer: coarse) {
+  .cursor-glow {
+    display: none;
+  }
+}
+
 /* ============ Mobile menu toggle ============ */
 .menu-toggle {
   display: none;
