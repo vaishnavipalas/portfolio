@@ -97,8 +97,8 @@ img {
 /* ============ Profile ============ */
 .profile-photo-wrap {
   display: inline-block;
-  width: 88px;
-  height: 88px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid var(--border-strong);
